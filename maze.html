@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .mbody
+        {
+            background-color: gray;
+            height:500px;
+            width:500px;
+            justify-content: center;
+        }
+        #maze {
+            display: grid;
+            gap: 1px;
+            
+            margin: auto;
+            height:500px;
+            width:500px;
+            
+           
+        }
+        .wall, .space {
+            height: 20px;
+            width: 20px;
+        }
+        .wall {
+            background-color: black;
+        }
+        .space {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mbody">
+        <div id="maze"></div>
+        <button type="button" onclick="result()">Submit</button>
+        <div id="soln"></div>
+    </div>
+    <script src="maze3.js"></script>
+</body>
+</html>
